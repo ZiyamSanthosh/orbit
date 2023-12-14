@@ -66,7 +66,7 @@
         <version.jstl>1.2.2</version.jstl>
         <version.jstl.glassfish>1.2.5</version.jstl.glassfish>
         <orbit.version.jstl>1.2.1.wso2v3</orbit.version.jstl>
-        <exp.pkg.version.javax.servlet.jsp.jstl>1.2.1</exp.pkg.version.javax.servlet.jsp.jstl>
+        <exp.pkg.version.javax.servlet.jsp.jstl>1.2.2</exp.pkg.version.javax.servlet.jsp.jstl>
         <imp.pkg.version.javax.servlet.jsp.jstl>[1.2.1, 1.3.0)</imp.pkg.version.javax.servlet.jsp.jstl>
     </properties>
 </project>
