@@ -40,8 +40,17 @@
                     <groupId>log4j</groupId>
                     <artifactId>log4j</artifactId>
                 </exclusion>
+                <exclusion>
+                    <groupId>com.github.erosb</groupId>
+                    <artifactId>everit-json-schema</artifactId>
+                </exclusion>
             </exclusions>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>com.github.erosb</groupId>
+            <artifactId>everit-json-schema</artifactId>
+            <version>${version.everit.json.schema}</version>
         </dependency>
     </dependencies>
 
@@ -82,6 +91,7 @@
     <properties>
         <version.hazelcast>5.1.7</version.hazelcast>
         <version.hazelcast.exp.pkg>5.1.7</version.hazelcast.exp.pkg>
+        <version.everit.json.schema>1.14.3</version.everit.json.schema>
     </properties>
 
     <distributionManagement>
