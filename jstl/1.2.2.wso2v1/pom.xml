@@ -19,27 +19,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.wso2.orbit.javax.servlet.jsp.jstl</groupId>
+    <groupId>javax.servlet.jsp.jstl.wso2</groupId>
     <artifactId>jstl</artifactId>
     <version>1.2.2.wso2v1</version>
     <packaging>bundle</packaging>
     <name>WSO2 Carbon - Javax servlet bundle</name>
     <description>Javax Servlet API</description>
-
-    <distributionManagement>
-        <repository>
-            <id>wso2.releases</id>
-            <name>WSO2 internal Repository</name>
-            <url>https://maven.wso2.org/nexus/content/repositories/releases/</url>
-        </repository>
-
-        <snapshotRepository>
-            <id>wso2.snapshots</id>
-            <name>Apache Snapshot Repository</name>
-            <url>https://maven.wso2.org/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-
     <dependencies>
         <dependency>
             <groupId>org.glassfish.web</groupId>
@@ -67,7 +52,7 @@
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Private-Package></Private-Package>
                         <Export-Package>
-                            org.apache.taglibs.standard.*;version="${exp.pkg.version.org.apache.taglibs.standard}";-split-package:=merge-first,
+                            org.apache.taglibs.standard.*;version="${exp.pkg.version.javax.servlet.jsp.jstl}";-split-package:=merge-first,
                             javax.servlet.jsp.jstl.*;version="${exp.pkg.version.javax.servlet.jsp.jstl}";-split-package:=merge-first
                         </Export-Package>
                         <Import-Package>*;resolution:=optional</Import-Package>
@@ -82,7 +67,6 @@
         <version.jstl.glassfish>1.2.5</version.jstl.glassfish>
         <orbit.version.jstl>1.2.2.wso2v1</orbit.version.jstl>
         <exp.pkg.version.javax.servlet.jsp.jstl>1.2.2</exp.pkg.version.javax.servlet.jsp.jstl>
-        <exp.pkg.version.org.apache.taglibs.standard>1.2.5</exp.pkg.version.org.apache.taglibs.standard>
         <imp.pkg.version.javax.servlet.jsp.jstl>[1.2.1, 1.3.0)</imp.pkg.version.javax.servlet.jsp.jstl>
     </properties>
 </project>
