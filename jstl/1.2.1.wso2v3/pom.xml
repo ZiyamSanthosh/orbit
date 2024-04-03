@@ -52,7 +52,7 @@
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Private-Package></Private-Package>
                         <Export-Package>
-                            org.apache.taglibs.standard.*;version="${exp.pkg.version.javax.servlet.jsp.jstl}";-split-package:=merge-first,
+                            org.apache.taglibs.standard.*;version="${exp.pkg.version.org.apache.taglibs.standard}";-split-package:=merge-first,
                             javax.servlet.jsp.jstl.*;version="${exp.pkg.version.javax.servlet.jsp.jstl}";-split-package:=merge-first
                         </Export-Package>
                         <Import-Package>*;resolution:=optional</Import-Package>
@@ -67,6 +67,7 @@
         <version.jstl.glassfish>1.2.5</version.jstl.glassfish>
         <orbit.version.jstl>1.2.1.wso2v3</orbit.version.jstl>
         <exp.pkg.version.javax.servlet.jsp.jstl>1.2.2</exp.pkg.version.javax.servlet.jsp.jstl>
+        <exp.pkg.version.org.apache.taglibs.standard>1.2.5</exp.pkg.version.org.apache.taglibs.standard>
         <imp.pkg.version.javax.servlet.jsp.jstl>[1.2.1, 1.3.0)</imp.pkg.version.javax.servlet.jsp.jstl>
     </properties>
 </project>
